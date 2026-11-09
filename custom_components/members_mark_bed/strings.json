@@ -1,0 +1,143 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Member's Mark WiFi Bed",
+        "description": "Local control of the bed's WiFi box. See the README for how to find your bed's access key.",
+        "data": {
+          "host": "Bed IP address",
+          "access_key": "Access key (32 hex characters)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "The bed did not answer the handshake. Check the IP and that the phone app is closed.",
+      "invalid_key": "The access key must be 32 hex characters."
+    },
+    "abort": {
+      "already_configured": "This bed is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Position calibration",
+        "data": {
+          "head_max": "Raw head reading when fully raised",
+          "foot_max": "Raw foot reading when fully raised"
+        }
+      }
+    }
+  },
+  "entity": {
+    "cover": {
+      "head": {
+        "name": "Head"
+      },
+      "foot": {
+        "name": "Foot"
+      }
+    },
+    "button": {
+      "flat": {
+        "name": "Flat"
+      },
+      "zero_g": {
+        "name": "Zero-G"
+      },
+      "memory_1": {
+        "name": "Preset I"
+      },
+      "memory_2": {
+        "name": "Preset II"
+      },
+      "stop": {
+        "name": "Stop"
+      },
+      "memory_3": {
+        "name": "Preset III"
+      },
+      "memory_4": {
+        "name": "Preset M"
+      },
+      "massage_off": {
+        "name": "Massage off"
+      },
+      "save_memory_1": {
+        "name": "Save to preset I"
+      },
+      "save_memory_2": {
+        "name": "Save to preset II"
+      },
+      "save_memory_3": {
+        "name": "Save to preset III"
+      },
+      "save_memory_4": {
+        "name": "Save to preset M"
+      }
+    },
+    "sensor": {
+      "head_raw": {
+        "name": "Head raw position"
+      },
+      "foot_raw": {
+        "name": "Foot raw position"
+      },
+      "status_frame": {
+        "name": "Status frame"
+      },
+      "massage_head": {
+        "name": "Head massage level"
+      },
+      "massage_foot": {
+        "name": "Foot massage level"
+      },
+      "massage_remaining": {
+        "name": "Massage time remaining"
+      }
+    },
+    "light": {
+      "light": {
+        "name": "Under-bed light"
+      }
+    },
+    "select": {
+      "massage_head_select": {
+        "name": "Head massage",
+        "state": {
+          "off": "Off",
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        }
+      },
+      "massage_foot_select": {
+        "name": "Foot massage",
+        "state": {
+          "off": "Off",
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High"
+        }
+      },
+      "massage_pattern_select": {
+        "name": "Massage pattern",
+        "state": {
+          "pattern_1": "Pattern 1",
+          "pattern_2": "Pattern 2",
+          "pattern_3": "Pattern 3",
+          "pattern_4": "Pattern 4"
+        }
+      },
+      "massage_timer_select": {
+        "name": "Massage timer",
+        "state": {
+          "off": "Off",
+          "10_min": "10 min",
+          "20_min": "20 min",
+          "30_min": "30 min"
+        }
+      }
+    }
+  }
+}
